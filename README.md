@@ -5,7 +5,7 @@ Login page
 
 
 Registration page  
-![Image](https://github.com/user-attachments/assets/e821dbd1-9397-44ee-9c2b-55da86bbdb93)
+![Image](https://github.com/user-attachments/assets/07758944-3196-469e-9c41-13e8e398a89e)
 
 
 Home page  
