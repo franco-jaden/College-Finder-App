@@ -13,7 +13,7 @@ Home page
 
 
 College finder  
-![Image](https://github.com/user-attachments/assets/aca49885-60ba-4ef7-9441-8734f5af2d26)
+![Image](https://github.com/user-attachments/assets/09ab0b3e-06d3-4905-aa81-9e804759d74a)
 
 
 College comparer  
