@@ -9,7 +9,7 @@ Registration page
 
 
 Home page  
-![Image](https://github.com/user-attachments/assets/121ce7c5-6c74-49c9-99fe-e616bf8b168e)
+![Image](https://github.com/user-attachments/assets/da2b5668-2418-4a67-9010-abda24d77a3b)
 
 
 College finder  
