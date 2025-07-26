@@ -21,4 +21,4 @@ College comparer
 
 
 Chat feature  
-<img width="640" height="352" alt="Image" src="https://github.com/user-attachments/assets/306f55a0-5d67-4e1f-87b9-b7c4673521e5" />
+<img width="640" height="352" alt="Image" src="https://github.com/user-attachments/assets/9ed569ae-394e-4889-87fe-1ecde04f7bce" />
