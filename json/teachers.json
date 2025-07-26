@@ -1,0 +1,147 @@
+[
+  {
+      "collegeName": "XYZ College",
+      "teacherProfiles": [
+          {
+              "name": "John Doe",
+              "subject": "Computer Science",
+              "email": "johndoe@xyzcollege.com",
+              "experience": "10+ years of teaching experience",
+              "profilePhoto": "../templates/home/person1.jpg"
+          },
+          {
+              "name": "Jane Smith",
+              "subject": "Mathematics",
+              "email": "janesmith@xyzcollege.com",
+              "experience": "5 years of teaching experience",
+              "profilePhoto": "../templates/home/person2.jpg"
+          }
+      ]
+  },
+  {
+      "collegeName": "ABC College",
+      "teacherProfiles": [
+          {
+              "name": "Mark Johnson",
+              "subject": "Physics",
+              "email": "markjohnson@abccollege.com",
+              "experience": "8 years of teaching experience",
+              "profilePhoto": "../templates/home/person3.jpg"
+          },
+          {
+              "name": "Lisa Anderson",
+              "subject": "Chemistry",
+              "email": "lisaanderson@abccollege.com",
+              "experience": "6 years of teaching experience",
+              "profilePhoto": "../templates/home/person4.jpg"
+          }
+      ]
+  },
+  {
+      "collegeName": "SFIT",
+      "teacherProfiles": [
+          {
+              "name": "Sachin More",
+              "subject": "Computer Science",
+              "email": "sachinmore@sfit.ac.in",
+              "experience": "10+ years of making learning hell",
+              "profilePhoto": "../templates/home/sachin.png"
+          }
+      ]
+  },
+  {
+      "collegeName": "Harvard University",
+      "teacherProfiles": [
+          {
+              "name": "Jennifer Adams",
+              "subject": "Law",
+              "email": "jenniferadams@harvard.edu",
+              "experience": "15+ years of teaching experience",
+              "profilePhoto": "../templates/home/person5.jpg"
+          },
+          {
+              "name": "Robert Thompson",
+              "subject": "Political Science",
+              "email": "robertthompson@harvard.edu",
+              "experience": "12 years of teaching experience",
+              "profilePhoto": "../templates/home/person6.jpg"
+          }
+      ]
+  },
+  {
+      "collegeName": "Oxford University",
+      "teacherProfiles": [
+          {
+              "name": "Emma Collins",
+              "subject": "English Literature",
+              "email": "emmacollins@oxford.ac.uk",
+              "experience": "10 years of teaching experience",
+              "profilePhoto": "../templates/home/person7.jpg"
+          },
+          {
+              "name": "Daniel Harris",
+              "subject": "Philosophy",
+              "email": "danielharris@oxford.ac.uk",
+              "experience": "8 years of teaching experience",
+              "profilePhoto": "../templates/home/person8.jpg"
+          }
+      ]
+  },
+  {
+      "collegeName": "Massachusetts Institute of Technology (MIT)",
+      "teacherProfiles": [
+          {
+              "name": "Andrew Wilson",
+              "subject": "Computer Engineering",
+              "email": "andrewwilson@mit.edu",
+              "experience": "12+ years of teaching experience",
+              "profilePhoto": "../templates/home/person9.jpg"
+          },
+          {
+              "name": "Julia Thompson",
+              "subject": "Artificial Intelligence",
+              "email": "juliathompson@mit.edu",
+              "experience": "10 years of teaching experience",
+              "profilePhoto": "../templates/home/person10.jpg"
+          }
+      ]
+  },
+  {
+      "collegeName": "University of Cambridge",
+      "teacherProfiles": [
+          {
+              "name": "David Walker",
+              "subject": "History",
+              "email": "davidwalker@cambridge.ac.uk",
+              "experience": "10+ years of teaching experience",
+              "profilePhoto": "../templates/home/person11.jpg"
+          },
+          {
+              "name": "Sophie Turner",
+              "subject": "Archeology",
+              "email": "sophieturner@cambridge.ac.uk",
+              "experience": "7 years of teaching experience",
+              "profilePhoto": "../templates/home/person12.jpg"
+          }
+      ]
+  },
+  {
+      "collegeName": "Indian Institute of Technology (IIT) Bombay",
+      "teacherProfiles": [
+          {
+              "name": "Rahul Deshmukh",
+              "subject": "Computer Science",
+              "email": "rahuldeshmukh@iitb.ac.in",
+              "experience": "10+ years of teaching experience",
+              "profilePhoto": "../templates/home/person13.jpg"
+          },
+          {
+              "name": "Priya Sharma",
+              "subject": "Electrical Engineering",
+              "email": "priyasharma@iitb.ac.in",
+              "experience": "6 years of teaching experience",
+              "profilePhoto": "../templates/home/person14.jpg"
+          }
+      ]
+  }
+]

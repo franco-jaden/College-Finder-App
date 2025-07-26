@@ -1,0 +1,402 @@
+[
+  {
+    "collegeName": "Osaka University",
+    "country": "Japan",  
+    "AvgcostOfLiving": 616.59,
+    "link": "https://www.osaka-u.ac.jp/en",
+    "Avgfees": 3712.02,
+    "Acceptance rate": "41%"
+  },
+  {
+    "collegeName": "University of Science and Technology of China",
+    "country": "China",  
+    "AvgcostOfLiving": 4550.70,
+    "link": "http://en.ustc.edu.cn/",
+    "Avgfees": 3585.40,
+    "Acceptance rate": "88%"
+  },
+  {
+    "collegeName": "Texas A&M University",
+    "country": "United States",  
+    "AvgcostOfLiving": 18014.00,
+    "link": "https://www.tamu.edu/",
+    "Avgfees": 30608.00,
+    "Acceptance rate": "63%"
+  },
+  {
+    "collegeName": "KTH Royal Institute of Technology",
+    "country": "Sweden",  
+    "AvgcostOfLiving": 8460.14,
+    "link": "https://www.kth.se/en",
+    "Avgfees": 23000.00,
+    "Acceptance rate": "40-50%"
+  },
+  {
+    "collegeName": "Chalmers University of Technology",
+    "country": "Sweden",  
+    "AvgcostOfLiving": 6301.68,
+    "link": "https://www.chalmers.se/en/",
+    "Avgfees": 19998.44,
+    "Acceptance rate": "80%"
+  },
+  {
+    "collegeName": "Katholieke Universiteit Leuven",
+    "country": "Belgium",  
+    "AvgcostOfLiving": 8728.00,
+    "link": "https://www.kuleuven.be/english/kuleuven/",
+    "Avgfees": 7745.12,
+    "Acceptance rate": "73%"
+  },
+  {
+    "collegeName": "University of Auckland",
+    "country": "New Zealand",  
+    "AvgcostOfLiving": 12000.00,
+    "link": "https://www.auckland.ac.nz/en.html",
+    "Avgfees": 29775.50,
+    "Acceptance rate": "45%"
+  },
+  {
+    "collegeName": "Yale University",
+    "country": "United States",  
+    "AvgcostOfLiving": 21870.00,
+    "link": "https://www.yale.edu/",
+    "Avgfees": 64700.00,
+    "Acceptance rate": "7%"
+  },
+  {
+    "collegeName": "Virginia Polytechnic Institute (VIRGINIA TECH)",
+    "country": "United States",  
+    "AvgcostOfLiving": 12906.00,
+    "link": "https://www.vt.edu/",
+    "Avgfees": 32433.00,
+    "Acceptance rate": "56%"
+  },
+  {
+    "collegeName": "University of Edinburgh",
+    "country": "United Kingdom",  
+    "AvgcostOfLiving": 19520.00,
+    "link": "https://www.ed.ac.uk/",
+    "Avgfees": 39156.13,
+    "Acceptance rate": "46%"
+  },
+  {
+    "collegeName": "University of Queensland",
+    "country": "Australia",  
+    "AvgcostOfLiving": 2026.16,
+    "link": "https://www.uq.edu.au/",
+    "Avgfees": 31501.46,
+    "Acceptance rate": "40%"
+  },
+  {
+    "collegeName": "University of California, Santa Barbara",
+    "country": "United States",  
+    "AvgcostOfLiving": 21942.00,
+    "link": "https://www.ucsb.edu/",
+    "Avgfees": 34320.00,
+    "Acceptance rate": "37%"
+  },
+  {
+    "collegeName": "Columbia University",
+    "country": "United States",  
+    "AvgcostOfLiving": 22070.00,
+    "link": "https://www.columbia.edu/",
+    "Avgfees": 57402.00,
+    "Acceptance rate": "7%"
+  },
+  {
+    "collegeName": "Politecnico di Milano",
+    "country": "Italy",  
+    "AvgcostOfLiving": 15777.31,
+    "link": "https://www.polimi.it/en",
+    "Avgfees": 4246.64,
+    "Acceptance rate": "18%"
+  },
+  {
+    "collegeName": "Technische Universität Berlin",
+    "country": "Germany",  
+    "AvgcostOfLiving": 9822.60,
+    "link": "https://www.tu.berlin/en/",
+    "Avgfees": 336.15,
+    "Acceptance rate": "48%"
+  },
+  {
+    "collegeName": "Rensselaer Polytechnic Institute",
+    "country": "United States",  
+    "AvgcostOfLiving": 18600.00,
+    "link": "https://www.rpi.edu/",
+    "Avgfees": 61670.00,
+    "Acceptance rate": "53%"
+  },
+  {
+    "collegeName": "Johns Hopkins University",
+    "country": "United States",  
+    "AvgcostOfLiving": 19257.00,
+    "link": "https://www.jhu.edu/",
+    "Avgfees": 60480.00,
+    "Acceptance rate": "11%"
+  },
+  {
+    "collegeName": "Universität Stuttgart",
+    "country": "Germany",  
+    "AvgcostOfLiving": 1550,
+    "link": "https://www.uni-stuttgart.de/en/",
+    "Avgfees": 1418.82,
+    "Acceptance rate": "71%"
+  },
+  {
+    "collegeName": "University of Hong Kong",
+    "country": "Hong Kong",  
+    "AvgcostOfLiving": 6380.00,
+    "link": "https://www2.hkuspace.hku.hk/cc/cht/",
+    "Avgfees": 23241.40,
+    "Acceptance rate": "10%"
+  },
+  {
+    "collegeName": "Indian Institute of Technology Kanpur (IIT Kanpur)",
+    "country": "India",  
+    "AvgcostOfLiving": 510.00,
+    "link": "https://www.iitk.ac.in/",
+    "Avgfees": 350.43,
+    "Acceptance rate": "0-9%"
+  },
+  {
+    "collegeName": "Rheinisch-Westfälische Technische Hochschule Aachen",
+    "country": "Germany",  
+    "AvgcostOfLiving": 14368.20,
+    "link": "https://www.rwth-aachen.de",
+    "Avgfees": 653.10,
+    "Acceptance rate": "10%"
+  },
+  {
+    "collegeName": "Karlsruhe Institute of Technology",
+    "country": "Germany",  
+    "AvgcostOfLiving": 10449.60,
+    "link": "https://www.kit.edu/english/",
+    "Avgfees": 3275.00,
+    "Acceptance rate": "20-30%"
+  },
+  {
+    "collegeName": "University of Wisconsin-Madison",
+    "country": "United States",  
+    "AvgcostOfLiving": 16048.00,
+    "link": "https://www.wisc.edu/",
+    "Avgfees": 25578.00,
+    "Acceptance rate": "57%"
+  },
+  {
+    "collegeName": "Indian Institute of Technology Madras (IIT Madras)",
+    "country": "India",  
+    "AvgcostOfLiving": 546,
+    "link": "https://www.iitm.ac.in/",
+    "Avgfees": 242.37,
+    "Acceptance rate": "15%"
+  },
+  {
+    "collegeName": "The Chinese University of Hong Kong",
+    "country": "Hong Kong",  
+    "AvgcostOfLiving": 10216.00,
+    "link": "https://www.cuhk.edu.hk/english/",
+    "Avgfees": 18516.50,
+    "Acceptance rate": "10%"
+  },
+  {
+    "collegeName": "Vienna University of Technology",
+    "country": "Austria",  
+    "AvgcostOfLiving": 10444.80,
+    "link": "https://www.tuwien.at/en/",
+    "Avgfees": 1576.00,
+    "Acceptance rate": "25%"
+  },
+  {
+    "collegeName": "Technical University of Denmark",
+    "country": "Denmark",  
+    "AvgcostOfLiving": 14677.20,
+    "link": "https://www.dtu.dk/english",
+    "Avgfees": 16308.00,
+    "Acceptance rate": "46%"
+  },
+  {
+    "collegeName": "University of Pennsylvania",
+    "country": "United States",  
+    "AvgcostOfLiving": 20928.00,
+    "link": "https://www.upenn.edu/",
+    "Avgfees": 44162.00,
+    "Acceptance rate": "9%"
+  },
+  {
+    "collegeName": "McMaster University",
+    "country": "Canada",  
+    "AvgcostOfLiving": 12260.00,
+    "link": "https://www.mcmaster.ca/",
+    "Avgfees": 28000.00,
+    "Acceptance rate": "58%"
+  },
+  {
+    "collegeName": "Pennsylvania State University",
+    "country": "United States",  
+    "AvgcostOfLiving": 17772.00,
+    "link": "https://www.psu.edu/",
+    "Avgfees": 22465.00,
+    "Acceptance rate": "78%"
+  },
+  {
+    "collegeName": "Northwestern University",
+    "country": "United States",  
+    "AvgcostOfLiving": 24336.00,
+    "link": "https://www.northwestern.edu/",
+    "Avgfees": 53024.00,
+    "Acceptance rate": "9%"
+  },
+  {
+    "collegeName": "University of Maryland",
+    "country": "United States",  
+    "AvgcostOfLiving": 21998.00,
+    "link": "https://umd.edu/",
+    "Avgfees": 35755.00,
+    "Acceptance rate": "50%"
+  },
+  {
+    "collegeName": "Indian Institute of Technology Kharagpur (IIT Kharagpur (IIT-KGP)",
+    "country": "India",  
+    "AvgcostOfLiving": 399.00,
+    "link": "https://www.iitkgp.ac.in/",
+    "Avgfees": 337.61,
+    "Acceptance rate": "13%"
+  },
+  {
+    "collegeName": "University of Chicago",
+    "country": "United States",  
+    "AvgcostOfLiving": 20796.00,
+    "link": "https://www.uchicago.edu/",
+    "Avgfees": 62640.00,
+    "Acceptance rate": "6%"
+  },
+  {
+    "collegeName": "University of Washington",
+    "country": "United States",  
+    "AvgcostOfLiving": 18948.00,
+    "link": "https://www.washington.edu/",
+    "Avgfees": 40740.00,
+    "Acceptance rate": "56%"
+  },
+  {
+    "collegeName": "Chulalongkorn University",
+    "country": "Thailand",  
+    "AvgcostOfLiving": 3406.80,
+    "link": "https://www.chula.ac.th/en/",
+    "Avgfees": 4033.00,
+    "Acceptance rate": "70%"
+  },
+  {
+    "collegeName": "Université de Montréal",
+    "country": "Canada",  
+    "AvgcostOfLiving": 20000.00,
+    "link": "https://www.umontreal.ca/en/",
+    "Avgfees": 23345.97,
+    "Acceptance rate": "57%"
+  },
+  {
+    "collegeName": "University of Southern California",
+    "country": "United States",  
+    "AvgcostOfLiving": 19138.00,
+    "link": "https://www.usc.edu/",
+    "Avgfees": 64666.00,
+    "Acceptance rate": "13%"
+  },
+  {
+    "collegeName": "City University of Hong Kong",
+    "country": "Hong Kong",  
+    "AvgcostOfLiving": 4644.64,
+    "link": "https://www.cityu.edu.hk/",
+    "Avgfees": 17864.00,
+    "Acceptance rate": "30-40%"
+  },
+  {
+    "collegeName": "Bandung Institute of Technology",
+    "country": "Indonesia",  
+    "AvgcostOfLiving": 475.69,
+    "link": "https://www.itb.ac.id/",
+    "Avgfees": 4657.10,
+    "Acceptance rate": "0-10%"
+  },
+  {
+    "collegeName": "University of Calgary",
+    "country": "Canada",  
+    "AvgcostOfLiving": 5572.00    ,
+    "link": "https://www.ucalgary.ca/",
+    "Avgfees": 8199.11,
+    "Acceptance rate": "10-20%"
+  },
+  {
+    "collegeName": "Fudan University",
+    "country": "China",  
+    "AvgcostOfLiving": 4968.00,
+    "link": "https://www.fudan.edu.cn/en/",
+    "Avgfees": 7656.00,
+    "Acceptance rate": "32%"
+  },
+  {
+    "collegeName": "Brown University",
+    "country": "United States",  
+    "AvgcostOfLiving": 18540.00,
+    "link": "https://www.brown.edu/",
+    "Avgfees": 60944.00,
+    "Acceptance rate": "8%"
+  },
+  {
+    "collegeName": "Helsinki University of Technology",
+    "country": "Finland",  
+    "AvgcostOfLiving": 2626.00,
+    "link": "https://www.helsinki.fi/en",
+    "Avgfees": 16344.00,
+    "Acceptance rate": "15%"
+  },
+  {
+    "collegeName": "RMIT University",
+    "country": "Australia",  
+    "AvgcostOfLiving": 4350.00,
+    "link": "https://www.rmit.edu.au/",
+    "Avgfees": 23624.35,
+    "Acceptance rate": "22%"
+  },
+  {
+    "collegeName": "University College London (UCL)",
+    "country": "United Kingdom",  
+    "AvgcostOfLiving": 12022.24,
+    "link": "https://www.ucl.ac.uk/",
+    "Avgfees": 40673.91,
+    "Acceptance rate": "63%"
+  },
+  {
+    "collegeName": "University of Southampton",
+    "country": "United Kingdom",  
+    "AvgcostOfLiving": 15205.20,
+    "link": "https://www.southampton.ac.uk/",
+    "Avgfees": 37394.66,
+    "Acceptance rate": "84%"
+  },
+  {
+    "collegeName": "Tohoku University",
+    "country": "Japan",  
+    "AvgcostOfLiving": 10534.70,
+    "link": "https://www.tohoku.ac.jp/en/",
+    "Avgfees": 3713.00,
+    "Acceptance rate": "41%"
+  },
+  {
+    "collegeName": "University of Birmingham",
+    "country": "United Kingdom",  
+    "AvgcostOfLiving": 16749.48,
+    "link": "https://www.birmingham.ac.uk/",
+    "Avgfees": 34945.51,
+    "Acceptance rate": "13.54%"
+  },
+  {
+    "collegeName": "École Normale Supérieure",
+    "country": "France",  
+    "AvgcostOfLiving": 11686.83,
+    "link": "https://www.ens.psl.eu/en",
+    "Avgfees": 265.04,
+    "Acceptance rate": "5-10%"
+  }
+] 

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Match</title>
+    <link rel="stylesheet" type="text/css" href="../css/expert.css">
+    <style>
+        #up-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            color: sandybrown;
+            font-size: 24px;
+            text-align: center;
+            line-height: 40px;
+            border-radius: 4px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            cursor: pointer;
+        }
+
+        #up-button.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>College Match</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="college.php">Find Colleges</a></li>
+            <li><a href="expert.php">Chat with Experts</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="Eprofile">
+        <button id="EprofileButton"><img src="../templates/home/profile.png" alt="Profile Image"></button>
+        <div id="EprofileBox" style="display: none;">
+            <img src="../templates/home/profile.png" alt="Profile Image">
+            <span id="nameTag"></span>
+            <button id="signInButton">Login</button>
+            <button id="registerButton">Register</button>
+            <button id="logoutButton" style="display: none;">Logout</button>
+        </div>
+    </div>
+
+</header>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Code for profile box functionality
+        const profileButton = document.getElementById("EprofileButton");
+        const profileBox = document.getElementById("EprofileBox");
+        const signInButton = document.getElementById("signInButton");
+        const registerButton = document.getElementById("registerButton");
+
+        profileButton.addEventListener("click", function (event) {
+            event.stopPropagation();
+            if (profileBox.style.display === "block") {
+                profileBox.style.display = "none";
+            } else {
+                profileBox.style.display = "block";
+            }
+        });
+
+        document.addEventListener("click", function (event) {
+            const targetElement = event.target;
+            if (
+                !profileBox.contains(targetElement) &&
+                !profileButton.contains(targetElement)
+            ) {
+                profileBox.style.display = "none";
+            }
+        });
+
+        signInButton.addEventListener("click", function () {
+            // Handle sign-in functionality here
+            window.location.href = "login.html";
+        });
+
+        registerButton.addEventListener("click", function () {
+            // Handle register functionality here
+            window.location.href = "register.html";
+        });
+    });
+</script>
+<script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+    import { getDatabase, set, ref, onValue } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+    import { getAuth, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+  };
+
+    // Initialize Firebaseassa
+    const app = initializeApp(firebaseConfig);
+    const database = getDatabase(app);
+    const auth = getAuth(app);
+
+    const user = auth.currentUser;
+    const logoutButton = document.getElementById('logoutButton');
+
+    document.getElementById('logoutButton').addEventListener('click', (e) => {
+        e.preventDefault();
+
+        signOut(auth)
+            .then(() => {
+                // Sign-out successful.
+                alert('User logged out!');
+                window.location.href = "login.html"; // Redirect to the login page after logout
+            })
+            .catch((error) => {
+                // An error happened.
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                alert(errorMessage);
+            });
+    });
+
+    onAuthStateChanged(auth, (user) => {
+        if (user) {
+            const uid = user.uid;
+            // User is signed in
+            console.log("User is signed in:", user.uid);
+            const nameRef = ref(database, `users/${user.uid}/name`);
+
+            // Listen for changes in the user's name
+            onValue(nameRef, (snapshot) => {
+                const name = snapshot.val();
+                const nameTag = document.getElementById('nameTag');
+                nameTag.textContent = name; // Set the user's name in the nameTag element
+            });
+            document.getElementById('signInButton').style.display = 'none'; // Hide the login button
+            document.getElementById('registerButton').style.display = 'none'; // Hide the register button
+            document.getElementById('logoutButton').style.display = 'block'; // Show the logout button
+        } else {
+            // User is signed out
+            console.log("User is signed out");
+            document.getElementById('nameTag').textContent = ''; // Clear the username
+            document.getElementById('signInButton').style.display = 'block'; // Show the login button
+            document.getElementById('registerButton').style.display = 'block'; // Show the register button
+            document.getElementById('logoutButton').style.display = 'none'; // Hide the logout button
+        }
+    });
+
+
+</script>
+
+
+<div class="container">
+    <div class="search-criteria-container">
+        <section class="search-criteria">
+            <h2>Search Criteria</h2>
+            <form>
+                <div>
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option value="Any">Any</option>
+                        <option value="Japan">Japan</option>
+                        <option value="China">China</option>
+                        <option value="United States">United States</option>
+                        <option value="India">India</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Canada">Canada</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="South Africa">South Africa</option>
+                    </select>
+
+                </div>
+
+                <div class="range-input">
+                    <label for="cost-of-living">Cost of Living:</label>
+                    <input type="number" id="cost-of-living-min" placeholder="Min">
+                    <span class="dash">-</span>
+                    <input type="number" id="cost-of-living-max" placeholder="Max">
+                </div>
+
+                <div class="range-input">
+                    <label for="acceptance-rate">Acceptance Rate:</label>
+                    <input type="number" id="acceptance-rate-min" placeholder="Min">
+                    <span class="dash">-</span>
+                    <input type="number" id="acceptance-rate-max" placeholder="Max">
+                </div>
+
+                <div class="range-input">
+                    <label for="ielts-toefl">IELTS/TOEFL Score:</label>
+                    <input type="number" id="ielts-toefl-min" placeholder="Min">
+                    <span class="dash">-</span>
+                    <input type="number" id="ielts-toefl-max" placeholder="Max">
+                </div>
+
+                <div class="range-input">
+                    <label for="gre-gmat">GRE/GMAT Score:</label>
+                    <input type="number" id="gre-gmat-min" placeholder="Min">
+                    <span class="dash">-</span>
+                    <input type="number" id="gre-gmat-max" placeholder="Max">
+                </div>
+
+                <div class="range-input">
+                    <label for="fees">Fees:</label>
+                    <input type="number" id="fees-min" placeholder="Min">
+                    <span class="dash">-</span>
+                    <input type="number" id="fees-max" placeholder="Max">
+                </div>
+
+                <div class="range-input">
+                    <label for="ranking">Ranking:</label>
+                    <input type="number" id="ranking-min" placeholder="Min">
+                    <span class="dash">-</span>
+                    <input type="number" id="ranking-max" placeholder="Max">
+                </div>
+
+                <button type="submit" id="find-colleges-btn">Find Colleges</button>
+                <button type="button" id="startup-btn">Show All</button>
+            </form>
+        </section>
+
+    </div>
+    <div class="results-container">
+
+        <div class="additional-section">
+            <!-- New search bar -->
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search Colleges By Name">
+                <button type="button" id="search-btn">Search</button>
+            </div>
+
+            <!-- Sort by dropdowns -->
+            <!-- Sort by dropdowns -->
+            <div class="sort-by">
+                <div class="sort-dropdowns">
+                    <label for="sort-by-select">Sort By:</label>
+                    <select id="sort-by-select">
+                        <option value="Any">Any</option>
+                        <option value="name">Name</option>
+                        <option value="country">Country</option>
+                        <option value="cost-of-living">Cost of Living</option>
+                        <option value="fees">Fees</option>
+                        <option value="ranking">Ranking</option>
+                        <option value="ielts-toefl">IELTS/TOEFL</option>
+                        <option value="gre-gmat">GRE/GMAT</option>
+                        <option value="acceptance-rate">Acceptance Rate</option>
+                    </select>
+
+                    <label for="sort-order-select">Sort Order:</label>
+                    <select id="sort-order-select">
+                        <option value="asc">Ascending</option>
+                        <option value="desc">Descending</option>
+                    </select>
+                </div>
+                <button type="button" id="sort-btn">Sort</button>
+            </div>
+        </div>
+
+        <section id="results">
+            <!-- Dynamic content -->
+        </section>
+    </div>
+</div>
+
+
+<footer>
+    <p>Study Abroad</p>
+</footer>
+<button id="up-button" onclick="scrollToTop()">&#8593;</button>
+<script src="../js/expert.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1:hover {
+    color: sandybrown;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+nav ul li a:hover {
+    color: #555; /* Change text color on hover */
+}
+
+.profile {
+    position: relative;
+}
+
+#profileButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#profileButton img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#profileBox {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+#profileBox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#nameTag {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#profileBox button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#profileBox button:hover {
+    opacity: 0.8;
+}
+
+#orText {
+    margin-top: 12px;
+    font-weight: bold;
+    color: black;
+    display: block;
+}
+
+.about-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.about-content ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}

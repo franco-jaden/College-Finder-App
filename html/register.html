@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Registration Form</title>
+  <link rel="stylesheet" type="text/css" href="../css/register.css">
+
+</head>
+
+<body>
+<header>
+  <h2>Registration Form</h2>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="registration">
+  <form id="registerForm">
+    <div class="alert">Registration complete!</div>
+
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password" required>
+    </div>
+
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+
+    <div class="form-group">
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender" required>
+        <option value="">Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact:</label>
+      <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Enter your address">
+    </div>
+
+    <button type="submit" id="submit" class="btn">Register</button>
+  </form>
+</div>
+
+<div class="password-constraints" id="passwordError">
+  <p>Password must include:</p>
+  <ul>
+    <li>At least 8 characters</li>
+    <li>At least one uppercase letter</li>
+    <li>At least one lowercase letter</li>
+    <li>At least one digit</li>
+    <li>At least one special character (!@#$%^&*()_-+=)</li>
+  </ul>
+</div>
+</body>
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+  import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js";
+  import { getAuth, createUserWithEmailAndPassword, sendEmailVerification  } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+
+
+  const firebaseConfig = {
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const database = getDatabase(app);
+  const auth = getAuth(app);
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var passwordInput = document.getElementById('password');
+    var confirmPasswordInput = document.getElementById('confirmpassword');
+    var emailInput = document.getElementById('email');
+    var contactInput = document.getElementById('contact');
+    var addressInput = document.getElementById('address');
+    var passwordError = document.getElementById('passwordError');
+
+    passwordInput.addEventListener('input', validatePassword);
+    confirmPasswordInput.addEventListener('input', validatePassword);
+    emailInput.addEventListener('input', validateEmail);
+    contactInput.addEventListener('input', validateContact);
+    addressInput.addEventListener('input', validateAddress);
+
+    function validatePassword() {
+      var password = passwordInput.value;
+      var confirmPassword = confirmPasswordInput.value;
+
+      if (password === confirmPassword) {
+        confirmPasswordInput.classList.remove('error');
+      } else {
+        confirmPasswordInput.classList.add('error');
+      }
+
+      var passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_\-+=]).{8,}$/;
+
+      if (passwordPattern.test(password)) {
+        passwordInput.classList.remove('error');
+        passwordError.style.display = 'none';
+      } else {
+        passwordInput.classList.add('error');
+        passwordError.style.display = 'block';
+      }
+    }
+
+    function validateEmail() {
+      var email = emailInput.value;
+
+      if (/^\S+@\S+\.\S+$/.test(email)) {
+        emailInput.classList.remove('error');
+      } else {
+        emailInput.classList.add('error');
+      }
+    }
+
+    function validateContact() {
+      var contact = contactInput.value;
+      contact = contact.replace(/\D/g, ''); // Remove non-numeric characters
+      contactInput.value = contact; // Update the input value
+
+      if (contact.length === 10) {
+        contactInput.classList.remove('error');
+      } else {
+        contactInput.classList.add('error');
+      }
+    }
+
+    function validateAddress() {
+      var address = addressInput.value;
+
+      if (address.trim() !== '') {
+        passwordError.style.display = 'block';
+      } else {
+        passwordError.style.display = 'none';
+      }
+    }
+  });
+
+  var submit = document.getElementById('submit');
+
+  submit.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    var nameInput = document.getElementById('name');
+    var emailInput = document.getElementById('email');
+    var passwordInput = document.getElementById('password');
+    var confirmPasswordInput = document.getElementById('confirmpassword');
+    var dobInput = document.getElementById('dob');
+    var genderInput = document.getElementById('gender');
+    var contactInput = document.getElementById('contact');
+    var addressInput     = document.getElementById('address');
+
+    var name = nameInput.value;
+    var email = emailInput.value;
+    var password = passwordInput.value;
+    var confirmPassword = confirmPasswordInput.value;
+    var dob = dobInput.value;
+    var gender = genderInput.value;
+    var contact = contactInput.value;
+    var address = addressInput.value;
+
+    // Validate the form fields
+    if (!name || !email || !password || !confirmPassword || !dob || !gender || !contact) {
+      alert('Please fill in all the required fields.');
+      return;
+    }
+
+    if (password !== confirmPassword) {
+      alert('Passwords do not match.');
+      return;
+    }
+
+    // Firebase registration
+    createUserWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+              // Registration successful
+              const user = userCredential.user;
+              const dt = new Date();
+
+              // Send email verification
+              sendEmailVerification(user)
+                      .then(() => {
+                        // Email verification sent
+                        set(ref(database, 'users/' + user.uid), {
+                          name: name,
+                          email: email,
+                          dob: dob,
+                          gender: gender,
+                          contact: contact,
+                          address: address,
+                          last_login: dt,
+                        });
+
+                        alert('Registration successful! Verification email sent.');
+                        // Clear form fields
+                        nameInput.value = '';
+                        emailInput.value = '';
+                        passwordInput.value = '';
+                        confirmPasswordInput.value = '';
+                        dobInput.value = '';
+                        genderInput.value = '';
+                        contactInput.value = '';
+                        addressInput.value = '';
+                      })
+                      .catch((error) => {
+                        // Error sending email verification
+                        alert('Error sending email verification: ' + error.message);
+                      });
+            })
+            .catch((error) => {
+              // Registration failed
+              const errorCode = error.code;
+              const errorMessage = error.message;
+              alert(errorMessage);
+            });
+    // Check if the user's email is verified
+    if (user && !user.emailVerified) {
+      alert('Please verify your email address before proceeding.');
+      // You can redirect the user to a page with a message or take other actions as needed.
+      return;
+    }
+
+  });
+</script>
+</html>
+

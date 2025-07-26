@@ -1,0 +1,208 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1:hover {
+    color: sandybrown;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+nav ul li a:hover {
+    color: #555; /* Change text color on hover */
+}
+
+.profile {
+    position: relative;
+}
+
+#profileButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#profileButton img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#profileBox {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+#profileBox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#nameTag {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#profileBox button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#profileBox button:hover {
+    opacity: 0.8;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+}
+
+.login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.new-user {
+    margin-top: 20px;
+}
+
+.new-user h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.new-user .btn {
+    margin-right: 10px;
+}
+
+/* Add hover effects for the "Find College" and "Chat with Students" elements */
+.about-us-section .find-college:hover,
+.about-us-section .chat-with-students:hover {
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+

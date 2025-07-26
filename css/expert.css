@@ -1,0 +1,551 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, ul {
+
+    margin: 0;
+    padding: 0;
+}
+
+header h1:hover {
+    color: sandybrown;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+nav ul li a:hover {
+    color: #555; /* Change text color on hover */
+}
+
+.Eprofilelogo {
+    position: relative;
+}
+
+#EprofileButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#EprofileButton img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#nameTag {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+    padding: 100px;
+    margin: -45px;
+}
+
+
+#EprofileBox {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+#EprofileBox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+#EprofileBox button {
+    background-color: #4CAF50;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#EprofileBox button:hover {
+    opacity: 0.8;
+}
+
+#orText {
+    margin-top: 12px;
+    font-weight: bold;
+    color: black;
+    display: block;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.search-criteria {
+    flex: 0 0 20%;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+.search-criteria-container {
+    flex: 0 0 20%;
+    padding: 10px;
+}
+
+.additional-section {
+    height: 3vh;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ccc ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"],
+.search-bar button {
+    margin-right: 10px;
+    margin-left: 50px;
+}
+
+.round-input {
+    border-radius: 20px;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+}
+
+.sort-dropdowns {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.sort-dropdowns label {
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.sort-order-input {
+    width: 125px; /* Adjust the width as desired */
+}
+
+.sort-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.results-container {
+    flex: 1;
+}
+
+#search-section {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search-section div {
+    margin-bottom: 10px;
+}
+
+#search-section label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#cost-slider {
+    width: 200px;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form select, form input[type="text"] {
+    margin-bottom: 30px;
+}
+
+.range-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.range-input label {
+    width: 120px;
+}
+
+.range-input input {
+    width: 80px;
+}
+
+.dash {
+    margin: 0 5px;
+}
+
+
+#results {
+    padding-top: 20px;
+    border-left: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.college-profile {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.college-profile:hover {
+    transform: scale(1.015);
+}
+
+.college-profile:hover:before {
+    animation: featureEffect 3.5s linear infinite;
+}
+
+.college-profile:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(244,244,244,0), rgba(244,244,244,1));
+    /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/National_Bolshevik_Party_flag.svg/150px-National_Bolshevik_Party_flag.svg.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    background-image: linear-gradient(to bottom, red, orange, yellow, green, blue, indigo, violet);*/
+    z-index: -1;
+}
+
+@keyframes featureEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.college-picture {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.college-profile h3 {
+    margin: 0;
+}
+
+.profile {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile:hover {
+    transform: scale(1.03);
+}
+
+.profile:hover:before {
+    animation: featureEffect 2.5s linear infinite;
+}
+
+.profile:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(244,244,244,0), rgba(244,244,244,1));
+    z-index: -1;
+}
+
+@keyframes featureEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profile-details {
+    flex-grow: 1;
+}
+
+.profile-details h3 {
+    margin: 0;
+}
+
+.profile-details p {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.chat-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.chat-messages {
+    max-width: 800px;
+    max-height: 469px;
+    /*width: 800px;
+    height: 469px;*/
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.message {
+    border-radius: 10px;
+    padding: 8px 12px;
+    max-width: 60%;
+    margin-bottom: 10px;
+}
+
+.message-sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    max-width: 600px;
+    max-height: 350px;
+}
+
+.message-received {
+    background-color: #f3f3f3;
+    align-self: flex-start;
+}
+
+.message:last-child {
+    margin-bottom: 0;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.message.person {
+    background-color: #eaf6ff;
+    border-radius: 5px 5px 5px 0;
+}
+
+.message.automated {
+    background-color: #fff;
+    text-align: right;
+    border-radius: 5px 5px 0 5px;
+}
+
+.message-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+.back-button {
+    margin-right: 5px;
+    padding: 10px 20px;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.profile .profile-details {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Add any other styles specific to the .profile-details class */
+}
+
+.profile .profile-details h3,
+.profile .profile-details p {
+    margin-bottom: 20px;
+}
+
+.chat-profile-img {
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
+    border-radius: 50%;
+    margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 11px;
+}
+
+.time-sent {
+    text-align: right;
+}
+
+.message-content {
+    /* max-width: 80%;  Adjust the value as needed */
+    word-wrap: break-word;
+}
+

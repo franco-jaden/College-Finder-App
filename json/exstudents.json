@@ -1,0 +1,138 @@
+[
+  {
+    "collegeName": "XYZ College",
+    "studentProfiles": [
+      {
+        "name": "Sarah Johnson",
+        "course": "Computer Science",
+        "graduationYear": 2020,
+        "profilePhoto": "../templates/home/person2.jpg"
+      },
+      {
+        "name": "Michael Smith",
+        "course": "Mathematics",
+        "graduationYear": 2019,
+        "profilePhoto": "../templates/home/person1.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "ABC College",
+    "studentProfiles": [
+      {
+        "name": "Sarah Johnson",
+        "course": "Computer Science",
+        "graduationYear": 2020,
+        "profilePhoto": "../templates/home/person2.jpg"
+      },
+      {
+        "name": "Michael Smith",
+        "course": "Mathematics",
+        "graduationYear": 2019,
+        "profilePhoto": "../templates/home/person1.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "SFIT",
+    "studentProfiles": [
+      {
+        "name": "John Doe",
+        "course": "Computer Science",
+        "graduationYear": 2022,
+        "profilePhoto": "../templates/home/person3.jpg"
+      },
+      {
+        "name": "Jane Smith",
+        "course": "Electrical Engineering",
+        "graduationYear": 2021,
+        "profilePhoto": "../templates/home/person4.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "Harvard University",
+    "studentProfiles": [
+      {
+        "name": "Emma Thompson",
+        "course": "Law",
+        "graduationYear": 2021,
+        "profilePhoto": "../templates/home/person7.jpg"
+      },
+      {
+        "name": "David Johnson",
+        "course": "Economics",
+        "graduationYear": 2020,
+        "profilePhoto": "../templates/home/person8.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "Oxford University",
+    "studentProfiles": [
+      {
+        "name": "Olivia Smith",
+        "course": "English Literature",
+        "graduationYear": 2022,
+        "profilePhoto": "../templates/home/person9.jpg"
+      },
+      {
+        "name": "William Davis",
+        "course": "Philosophy",
+        "graduationYear": 2021,
+        "profilePhoto": "../templates/home/person10.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "Massachusetts Institute of Technology (MIT)",
+    "studentProfiles": [
+      {
+        "name": "Sophia Johnson",
+        "course": "Computer Science",
+        "graduationYear": 2023,
+        "profilePhoto": "../templates/home/person11.jpg"
+      },
+      {
+        "name": "Daniel Wilson",
+        "course": "Mechanical Engineering",
+        "graduationYear": 2022,
+        "profilePhoto": "../templates/home/person12.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "University of Cambridge",
+    "studentProfiles": [
+      {
+        "name": "Isabella Thompson",
+        "course": "History",
+        "graduationYear": 2022,
+        "profilePhoto": "../templates/home/person13.jpg"
+      },
+      {
+        "name": "Alexander Smith",
+        "course": "Politics",
+        "graduationYear": 2021,
+        "profilePhoto": "../templates/home/person14.jpg"
+      }
+    ]
+  },
+  {
+    "collegeName": "Indian Institute of Technology (IIT) Bombay",
+    "studentProfiles": [
+      {
+        "name": "Ava Davis",
+        "course": "Computer Science",
+        "graduationYear": 2023,
+        "profilePhoto": "../templates/home/person15.jpg"
+      },
+      {
+        "name": "Mason Johnson",
+        "course": "Electrical Engineering",
+        "graduationYear": 2022,
+        "profilePhoto": "../templates/home/person16.jpg"
+      }
+    ]
+  }
+]

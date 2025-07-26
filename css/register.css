@@ -1,0 +1,126 @@
+/* register.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+nav ul li a:hover {
+    color: #555; /* Change text color on hover */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.registration {
+    max-width: 500px;
+    margin: 40px auto 5px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-group input,
+.form-group select {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.error {
+    outline: 2px solid red;
+  }
+
+  .password-constraints {
+    max-width: 500px;
+    margin: 5px auto 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.alert{
+    width: 100%;
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+    display: none;
+}

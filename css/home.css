@@ -1,0 +1,570 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: sandybrown;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1:hover {
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Add transition for color change */
+}
+
+nav ul li a:hover {
+    color: #555; /* Change text color on hover */
+}
+
+.profile {
+    position: relative;
+}
+
+#profileButton {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+#profileButton img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+#nameTag {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+#profileBox button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#profileBox button:hover {
+    opacity: 0.8;
+}
+
+#logoutButton {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#logoutButton:hover {
+    opacity: 0.8;
+}
+
+#orText {
+    margin-top: 12px;
+    font-weight: bold;
+    color: black;
+    display: block;
+}
+
+.hero {
+    background-image: url('../templates/home/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    color: #333333;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+.features {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.features .feature {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    transition: transform 0.3s ease;
+}
+
+.features .feature:hover {
+    transform: scale(1.05);
+}
+
+.features h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.features h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.features img:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background-color: #333;
+    color: sandybrown;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Add CSS for the up button */
+#up-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    color: sandybrown;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    cursor: pointer;
+}
+
+#up-button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Add styles for register-login section */
+.register-login {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+}
+
+.register-login-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.register-login h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.register-login p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.register-login .btn {
+    margin-right: 10px;
+}
+
+/* Add hover effects for the "Find College" and "Chat with Students" elements */
+.about-us-section .find-college:hover,
+.about-us-section .chat-with-students:hover {
+    background-color: #555;
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add styles for the dropdown menu */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: static;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-toggle {
+    color: #555;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add transition for color change */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+    color: sandybrown; /* Change text color on hover */
+}
+
+.feedback-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.feedback-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.feedback-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s;
+}
+
+.feedback-item:not(.active) {
+    filter: blur(4px);
+}
+
+.feedback-item:hover {
+    filter: none;
+    transform: scale(1.05); /* Morph effect: scale */
+}
+
+.feedback-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: transform 0.3s; /* Add transition for morph effect on image */
+}
+
+.feedback-item:hover img {
+    transform: scale(1.2); /* Morph effect: scale */
+}
+
+.feedback-content h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.feedback-content p {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-item {
+    display: inline-block;
+    margin: 10px;
+}
+
+.contact-item svg {
+    width: 50px;
+    height: 50px;
+    fill: #333; /* Change the fill color to your desired color */
+    transition: fill 0.3s ease;
+}
+
+.contact-item p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.contact-item a:hover svg path {
+    fill: deepskyblue; /* Change this to the desired hover color for the first logo */
+}
+
+.contact-item:nth-child(2) a:hover svg path {
+    fill: green; /* Change this to the desired hover color for the second logo */
+}
+
+.contact-item:nth-child(3) a:hover svg path {
+    fill: deeppink; /* Change this to the desired hover color for the third logo */
+}
+
+.contact-item:nth-child(4) a:hover svg path {
+    fill: red; /* Change this to the desired color for the fourth logo */
+}
+
+
+/* Cool effect for features section */
+.features .feature {
+    position: relative;
+    overflow: hidden;
+}
+
+.features .feature:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(244,244,244,0), rgba(244,244,244,1));
+    z-index: -1;
+    animation: featureEffect 2s linear infinite;
+}
+
+@keyframes featureEffect {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Add this CSS code at the end of your existing styles */
+#askButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px 20px;
+    background-color: #333;
+    color: sandybrown;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#askButton.show {
+    display: block;
+}
+
+#askButton:hover {
+    opacity: 0.8;
+}
+
+/* CSS styles for the chat tab */
+#chat-container {
+    position: fixed;
+    bottom: 80px; /* Adjust this value based on your layout */
+    right: 20px;
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    z-index: 9999;
+}
+
+#chat-header {
+    background-color: #333;
+    color: sandybrown;
+    padding: 10px;
+    font-size: 18px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#chat-body {
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    padding: 10px;
+    opacity: 0.3;
+    color: black;
+}
+
+#chat-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-body::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+
+#chat-body::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+#chat-body::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+
+#chat-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#chat-send-button {
+    background-color: #333;
+    color: sandybrown;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#chat-send-button:hover {
+    background-color: #555555;
+}
+
+#profileBox {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+    z-index: 999;
+}
+
+#profileBox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+#nameTag {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.message {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.user {
+    background-color: palegreen;
+    color: black;
+    text-align: right; /* Align user messages to the right side */
+}
