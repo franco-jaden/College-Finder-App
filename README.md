@@ -1,7 +1,7 @@
 # College-Finder-App
 
 Login page  
-![Image](https://github.com/user-attachments/assets/09ab0b3e-06d3-4905-aa81-9e804759d74a)
+![Image](https://github.com/user-attachments/assets/da2b5668-2418-4a67-9010-abda24d77a3b)
 
 
 Registration page  
