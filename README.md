@@ -17,7 +17,7 @@ College finder
 
 
 College comparer  
-<img width="622" height="334" alt="Image" src="https://github.com/user-attachments/assets/c0974db0-cca6-4680-b29a-3975b6a33234" />
+<img width="622" height="334" alt="Image" src="https://github.com/user-attachments/assets/6d59a4c9-502c-4299-9901-3e5ce7a57230" />
 
 
 Chat feature  
